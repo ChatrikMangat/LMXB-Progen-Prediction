@@ -1,0 +1,55 @@
+\hypertarget{query_8py}{}\section{src/query.py File Reference}
+\label{query_8py}\index{src/query.\+py@{src/query.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacequery}{query}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacequery_ab4cc339827af9c220b7b48313f8307e2}{error\+\_\+exit} (rpath)
+\begin{DoxyCompactList}\small\item\em Function to output fatal errors. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_af3cc8bfffa803d1a634868d08e9cedb7}{find\+\_\+mt\+\_\+start} (mt\+\_\+arr)
+\begin{DoxyCompactList}\small\item\em Function to find index where system starts MT. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_aa6657f1df72e61cb1a20d05df95d7dec}{get\+\_\+progens} (query)
+\begin{DoxyCompactList}\small\item\em Function to look through data files to find progenitors for the query. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_a5c2d384360f955a8d047fe01db312f88}{get\+\_\+query} (qpath)
+\begin{DoxyCompactList}\small\item\em Function to retrieve query information from .txt file and return a dictionary for the query. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_a58d8e5311469ef07a2a1f81db99edc57}{match\+\_\+props} (data, query)
+\begin{DoxyCompactList}\small\item\em Function to check whether a simulated system (data) matches all query properties. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_abd70c38699dfe0661022a6c70496017b}{output\+\_\+progens} (rpath, progens)
+\begin{DoxyCompactList}\small\item\em Function to store progenitor information for the given query in a .txt file. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_a631cedf881e24bf0a12fc4031158e804}{search} (array, element)
+\begin{DoxyCompactList}\small\item\em Binary search algorithm used for Donor Mass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacequery_aef6e5a079f78ef199b5c8c5e8018138c}{bh\+\_\+masses} = \mbox{[}7.\+0,10.\+0\mbox{]}
+\item 
+dictionary \hyperlink{namespacequery_aca5011236a28a00635a5bfdc3b7df6f6}{confs} = \{\textquotesingle{}lmlp\textquotesingle{}\+:\mbox{[}m\+\_\+arrl,p\+\_\+arrl\mbox{]},\textquotesingle{}smlp\textquotesingle{}\+:\mbox{[}m\+\_\+arrs,p\+\_\+arrl\mbox{]},\textquotesingle{}lmsp\textquotesingle{}\+:\mbox{[}m\+\_\+arrl,p\+\_\+arrs\mbox{]},\textquotesingle{}smsp\textquotesingle{}\+:\mbox{[}m\+\_\+arrs,p\+\_\+arrs\mbox{]}\}
+\item 
+list \hyperlink{namespacequery_adf94822c1d3c878c7e35db9412bb1d66}{errors} = \mbox{[}$\,$\mbox{]}
+\item 
+list \hyperlink{namespacequery_a0f59db5220a1b7eca136f6e360055d03}{labels} = \mbox{[}\textquotesingle{}m1\textquotesingle{},\textquotesingle{}m2\textquotesingle{},\textquotesingle{}mt\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}teff\textquotesingle{}\mbox{]}
+\item 
+\hyperlink{namespacequery_aafb51e0017c73f87bbe2699321c6a5fd}{m\+\_\+arrl} = np.\+arange(4.\+0,7.\+1,0.\+1)
+\item 
+\hyperlink{namespacequery_ac323a9cbb94178daa2549f554bd92baa}{m\+\_\+arrs} = np.\+arange(0.\+95,4.\+05,0.\+05)
+\item 
+\hyperlink{namespacequery_aa2c4078b994af1c9ad5f0821590d0eea}{p\+\_\+arrl} = np.\+arange(1.\+65,4.\+05,0.\+05)
+\item 
+\hyperlink{namespacequery_acb09178e64b20ef1abc8365eba1ca4fc}{p\+\_\+arrs} = np.\+arange(-\/0.\+60,1.\+66,0.\+02)
+\item 
+def \hyperlink{namespacequery_aadb205048dceb51ed98dc76b0cbc9d00}{progens} = get\+\_\+progens(query)
+\item 
+\hyperlink{namespacequery_ad85ee362e4d3c01fe2dfe01e693174c5}{qname} = sys.\+argv\mbox{[}1\mbox{]}
+\item 
+string \hyperlink{namespacequery_a46f3ad2dbb08867f79cc0b7699518b21}{qpath} = \char`\"{}\char`\"{}+qname
+\item 
+def \hyperlink{namespacequery_a7077167865224233566753fc78aadb36}{query} = get\+\_\+query(qpath)
+\item 
+string \hyperlink{namespacequery_a9391898f449326a0aae5c74a2f8f2da4}{rpath} = \char`\"{}progens\+\_\+\char`\"{}+qname
+\item 
+\hyperlink{namespacequery_a2530c3908f0179486a4c2255f792e27a}{start\+\_\+time} = time.\+time()
+\end{DoxyCompactItemize}

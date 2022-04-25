@@ -1,0 +1,25 @@
+All simulation data files are stored in /home/chatriks/search_test/
+7.0  Msol BH -> runs7_data/*m*p
+10.0 Msol BH -> runs10_data/*m*p
+1.4  Msol NS -> ns_data/*m*p
+
+Query input format (Sample query also provided separately):
+
+1               # 0: Neutron Star or 1: Black Hole
+0.0,8.0         # Donor Mass Range (Msol)
+6.0,14.0        # Accretor Mass Range (Msol)
+-15.0,-4.0      # log10(MT Rate) Range (Msol/yr)
+0.0,100000.0    # Orbital Period Range (days)
+3.0,5.0         # log10(Donor Effective Temperature) Range (K)
+
+
+Enter the quantities in order, if you don't have error estimates for a quantity, enter limits that span the entire range of possible values.
+
+Query name is entered as a command line argument, run using:
+
+python3 query.py sample_query.txt
+
+Input and output paths can be edited in the query.py file as needed.
+
+Output is structured as:
+Initial Donor Mass (Msol), Initial log10(Period) (days), Initial Accretor Mass (Msol), Time spent as observed system (years), Total evolution time spanned by simulation (years), Donor mass at start of MT (Msol), log10(Period) at start of MT (days)

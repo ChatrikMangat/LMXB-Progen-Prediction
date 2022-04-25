@@ -1,0 +1,6 @@
+1		# 0: Neutron Star or 1: Black Hole
+0.09,0.11	# Donor Mass Range (Msol)
+6.37,7.93	# Accretor Mass Range (Msol)
+-11.11,-7.09	# log10(MT Rate) Range (Msol/yr) 
+0.1625,0.1708	# Orbital Period Range (days)
+1.0,5.0		# log10(Donor Effective Temperature) Range (K)

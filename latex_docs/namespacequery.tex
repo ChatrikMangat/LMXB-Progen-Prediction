@@ -1,0 +1,266 @@
+\hypertarget{namespacequery}{}\section{query Namespace Reference}
+\label{namespacequery}\index{query@{query}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacequery_ab4cc339827af9c220b7b48313f8307e2}{error\+\_\+exit} (\hyperlink{namespacequery_a9391898f449326a0aae5c74a2f8f2da4}{rpath})
+\begin{DoxyCompactList}\small\item\em Function to output fatal errors. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_af3cc8bfffa803d1a634868d08e9cedb7}{find\+\_\+mt\+\_\+start} (mt\+\_\+arr)
+\begin{DoxyCompactList}\small\item\em Function to find index where system starts MT. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_aa6657f1df72e61cb1a20d05df95d7dec}{get\+\_\+progens} (\hyperlink{namespacequery_a7077167865224233566753fc78aadb36}{query})
+\begin{DoxyCompactList}\small\item\em Function to look through data files to find progenitors for the query. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_a5c2d384360f955a8d047fe01db312f88}{get\+\_\+query} (\hyperlink{namespacequery_a46f3ad2dbb08867f79cc0b7699518b21}{qpath})
+\begin{DoxyCompactList}\small\item\em Function to retrieve query information from .txt file and return a dictionary for the query. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_a58d8e5311469ef07a2a1f81db99edc57}{match\+\_\+props} (data, \hyperlink{namespacequery_a7077167865224233566753fc78aadb36}{query})
+\begin{DoxyCompactList}\small\item\em Function to check whether a simulated system (data) matches all query properties. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_abd70c38699dfe0661022a6c70496017b}{output\+\_\+progens} (\hyperlink{namespacequery_a9391898f449326a0aae5c74a2f8f2da4}{rpath}, \hyperlink{namespacequery_aadb205048dceb51ed98dc76b0cbc9d00}{progens})
+\begin{DoxyCompactList}\small\item\em Function to store progenitor information for the given query in a .txt file. \end{DoxyCompactList}\item 
+def \hyperlink{namespacequery_a631cedf881e24bf0a12fc4031158e804}{search} (array, element)
+\begin{DoxyCompactList}\small\item\em Binary search algorithm used for Donor Mass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacequery_aef6e5a079f78ef199b5c8c5e8018138c}{bh\+\_\+masses} = \mbox{[}7.\+0,10.\+0\mbox{]}
+\item 
+dictionary \hyperlink{namespacequery_aca5011236a28a00635a5bfdc3b7df6f6}{confs} = \{\textquotesingle{}lmlp\textquotesingle{}\+:\mbox{[}\hyperlink{namespacequery_aafb51e0017c73f87bbe2699321c6a5fd}{m\+\_\+arrl},\hyperlink{namespacequery_aa2c4078b994af1c9ad5f0821590d0eea}{p\+\_\+arrl}\mbox{]},\textquotesingle{}smlp\textquotesingle{}\+:\mbox{[}\hyperlink{namespacequery_ac323a9cbb94178daa2549f554bd92baa}{m\+\_\+arrs},\hyperlink{namespacequery_aa2c4078b994af1c9ad5f0821590d0eea}{p\+\_\+arrl}\mbox{]},\textquotesingle{}lmsp\textquotesingle{}\+:\mbox{[}\hyperlink{namespacequery_aafb51e0017c73f87bbe2699321c6a5fd}{m\+\_\+arrl},\hyperlink{namespacequery_acb09178e64b20ef1abc8365eba1ca4fc}{p\+\_\+arrs}\mbox{]},\textquotesingle{}smsp\textquotesingle{}\+:\mbox{[}\hyperlink{namespacequery_ac323a9cbb94178daa2549f554bd92baa}{m\+\_\+arrs},\hyperlink{namespacequery_acb09178e64b20ef1abc8365eba1ca4fc}{p\+\_\+arrs}\mbox{]}\}
+\item 
+list \hyperlink{namespacequery_adf94822c1d3c878c7e35db9412bb1d66}{errors} = \mbox{[}$\,$\mbox{]}
+\item 
+list \hyperlink{namespacequery_a0f59db5220a1b7eca136f6e360055d03}{labels} = \mbox{[}\textquotesingle{}m1\textquotesingle{},\textquotesingle{}m2\textquotesingle{},\textquotesingle{}mt\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}teff\textquotesingle{}\mbox{]}
+\item 
+\hyperlink{namespacequery_aafb51e0017c73f87bbe2699321c6a5fd}{m\+\_\+arrl} = np.\+arange(4.\+0,7.\+1,0.\+1)
+\item 
+\hyperlink{namespacequery_ac323a9cbb94178daa2549f554bd92baa}{m\+\_\+arrs} = np.\+arange(0.\+95,4.\+05,0.\+05)
+\item 
+\hyperlink{namespacequery_aa2c4078b994af1c9ad5f0821590d0eea}{p\+\_\+arrl} = np.\+arange(1.\+65,4.\+05,0.\+05)
+\item 
+\hyperlink{namespacequery_acb09178e64b20ef1abc8365eba1ca4fc}{p\+\_\+arrs} = np.\+arange(-\/0.\+60,1.\+66,0.\+02)
+\item 
+def \hyperlink{namespacequery_aadb205048dceb51ed98dc76b0cbc9d00}{progens} = \hyperlink{namespacequery_aa6657f1df72e61cb1a20d05df95d7dec}{get\+\_\+progens}(\hyperlink{namespacequery_a7077167865224233566753fc78aadb36}{query})
+\item 
+\hyperlink{namespacequery_ad85ee362e4d3c01fe2dfe01e693174c5}{qname} = sys.\+argv\mbox{[}1\mbox{]}
+\item 
+string \hyperlink{namespacequery_a46f3ad2dbb08867f79cc0b7699518b21}{qpath} = \char`\"{}\char`\"{}+\hyperlink{namespacequery_ad85ee362e4d3c01fe2dfe01e693174c5}{qname}
+\item 
+def \hyperlink{namespacequery_a7077167865224233566753fc78aadb36}{query} = \hyperlink{namespacequery_a5c2d384360f955a8d047fe01db312f88}{get\+\_\+query}(\hyperlink{namespacequery_a46f3ad2dbb08867f79cc0b7699518b21}{qpath})
+\item 
+string \hyperlink{namespacequery_a9391898f449326a0aae5c74a2f8f2da4}{rpath} = \char`\"{}progens\+\_\+\char`\"{}+qname
+\item 
+\hyperlink{namespacequery_a2530c3908f0179486a4c2255f792e27a}{start\+\_\+time} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacequery_ab4cc339827af9c220b7b48313f8307e2}\label{namespacequery_ab4cc339827af9c220b7b48313f8307e2}} 
+\index{query@{query}!error\+\_\+exit@{error\+\_\+exit}}
+\index{error\+\_\+exit@{error\+\_\+exit}!query@{query}}
+\subsubsection{\texorpdfstring{error\+\_\+exit()}{error\_exit()}}
+{\footnotesize\ttfamily def query.\+error\+\_\+exit (\begin{DoxyParamCaption}\item[{}]{rpath }\end{DoxyParamCaption})}
+
+
+
+Function to output fatal errors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & to progenitor .txt file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacequery_af3cc8bfffa803d1a634868d08e9cedb7}\label{namespacequery_af3cc8bfffa803d1a634868d08e9cedb7}} 
+\index{query@{query}!find\+\_\+mt\+\_\+start@{find\+\_\+mt\+\_\+start}}
+\index{find\+\_\+mt\+\_\+start@{find\+\_\+mt\+\_\+start}!query@{query}}
+\subsubsection{\texorpdfstring{find\+\_\+mt\+\_\+start()}{find\_mt\_start()}}
+{\footnotesize\ttfamily def query.\+find\+\_\+mt\+\_\+start (\begin{DoxyParamCaption}\item[{}]{mt\+\_\+arr }\end{DoxyParamCaption})}
+
+
+
+Function to find index where system starts MT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mt\+\_\+arr} & Array containing MT values during simulation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of start of MT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacequery_aa6657f1df72e61cb1a20d05df95d7dec}\label{namespacequery_aa6657f1df72e61cb1a20d05df95d7dec}} 
+\index{query@{query}!get\+\_\+progens@{get\+\_\+progens}}
+\index{get\+\_\+progens@{get\+\_\+progens}!query@{query}}
+\subsubsection{\texorpdfstring{get\+\_\+progens()}{get\_progens()}}
+{\footnotesize\ttfamily def query.\+get\+\_\+progens (\begin{DoxyParamCaption}\item[{}]{query }\end{DoxyParamCaption})}
+
+
+
+Function to look through data files to find progenitors for the query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & Dictionary form of query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array containing progenitor properties. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacequery_a5c2d384360f955a8d047fe01db312f88}\label{namespacequery_a5c2d384360f955a8d047fe01db312f88}} 
+\index{query@{query}!get\+\_\+query@{get\+\_\+query}}
+\index{get\+\_\+query@{get\+\_\+query}!query@{query}}
+\subsubsection{\texorpdfstring{get\+\_\+query()}{get\_query()}}
+{\footnotesize\ttfamily def query.\+get\+\_\+query (\begin{DoxyParamCaption}\item[{}]{qpath }\end{DoxyParamCaption})}
+
+
+
+Function to retrieve query information from .txt file and return a dictionary for the query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em qpath} & Path to query\+\_\+name.\+txt file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Query in dictionary form or -\/1 if the input format is incorrect. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacequery_a58d8e5311469ef07a2a1f81db99edc57}\label{namespacequery_a58d8e5311469ef07a2a1f81db99edc57}} 
+\index{query@{query}!match\+\_\+props@{match\+\_\+props}}
+\index{match\+\_\+props@{match\+\_\+props}!query@{query}}
+\subsubsection{\texorpdfstring{match\+\_\+props()}{match\_props()}}
+{\footnotesize\ttfamily def query.\+match\+\_\+props (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{query }\end{DoxyParamCaption})}
+
+
+
+Function to check whether a simulated system (data) matches all query properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Array of properties taken from simulation data. \\
+\hline
+{\em query} & Dictionary form of query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if simulated system matches query and 0 if it does not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacequery_abd70c38699dfe0661022a6c70496017b}\label{namespacequery_abd70c38699dfe0661022a6c70496017b}} 
+\index{query@{query}!output\+\_\+progens@{output\+\_\+progens}}
+\index{output\+\_\+progens@{output\+\_\+progens}!query@{query}}
+\subsubsection{\texorpdfstring{output\+\_\+progens()}{output\_progens()}}
+{\footnotesize\ttfamily def query.\+output\+\_\+progens (\begin{DoxyParamCaption}\item[{}]{rpath,  }\item[{}]{progens }\end{DoxyParamCaption})}
+
+
+
+Function to store progenitor information for the given query in a .txt file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rpath} & Path to progenitor .txt file. \\
+\hline
+{\em Array} & containing progenitor properties. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacequery_a631cedf881e24bf0a12fc4031158e804}\label{namespacequery_a631cedf881e24bf0a12fc4031158e804}} 
+\index{query@{query}!search@{search}}
+\index{search@{search}!query@{query}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily def query.\+search (\begin{DoxyParamCaption}\item[{}]{array,  }\item[{}]{element }\end{DoxyParamCaption})}
+
+
+
+Binary search algorithm used for Donor Mass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The array to be searched. \\
+\hline
+{\em element} & The element to be searhed for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of element in array. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacequery_aef6e5a079f78ef199b5c8c5e8018138c}\label{namespacequery_aef6e5a079f78ef199b5c8c5e8018138c}} 
+\index{query@{query}!bh\+\_\+masses@{bh\+\_\+masses}}
+\index{bh\+\_\+masses@{bh\+\_\+masses}!query@{query}}
+\subsubsection{\texorpdfstring{bh\+\_\+masses}{bh\_masses}}
+{\footnotesize\ttfamily list bh\+\_\+masses = \mbox{[}7.\+0,10.\+0\mbox{]}}
+
+\mbox{\Hypertarget{namespacequery_aca5011236a28a00635a5bfdc3b7df6f6}\label{namespacequery_aca5011236a28a00635a5bfdc3b7df6f6}} 
+\index{query@{query}!confs@{confs}}
+\index{confs@{confs}!query@{query}}
+\subsubsection{\texorpdfstring{confs}{confs}}
+{\footnotesize\ttfamily dictionary confs = \{\textquotesingle{}lmlp\textquotesingle{}\+:\mbox{[}\hyperlink{namespacequery_aafb51e0017c73f87bbe2699321c6a5fd}{m\+\_\+arrl},\hyperlink{namespacequery_aa2c4078b994af1c9ad5f0821590d0eea}{p\+\_\+arrl}\mbox{]},\textquotesingle{}smlp\textquotesingle{}\+:\mbox{[}\hyperlink{namespacequery_ac323a9cbb94178daa2549f554bd92baa}{m\+\_\+arrs},\hyperlink{namespacequery_aa2c4078b994af1c9ad5f0821590d0eea}{p\+\_\+arrl}\mbox{]},\textquotesingle{}lmsp\textquotesingle{}\+:\mbox{[}\hyperlink{namespacequery_aafb51e0017c73f87bbe2699321c6a5fd}{m\+\_\+arrl},\hyperlink{namespacequery_acb09178e64b20ef1abc8365eba1ca4fc}{p\+\_\+arrs}\mbox{]},\textquotesingle{}smsp\textquotesingle{}\+:\mbox{[}\hyperlink{namespacequery_ac323a9cbb94178daa2549f554bd92baa}{m\+\_\+arrs},\hyperlink{namespacequery_acb09178e64b20ef1abc8365eba1ca4fc}{p\+\_\+arrs}\mbox{]}\}}
+
+\mbox{\Hypertarget{namespacequery_adf94822c1d3c878c7e35db9412bb1d66}\label{namespacequery_adf94822c1d3c878c7e35db9412bb1d66}} 
+\index{query@{query}!errors@{errors}}
+\index{errors@{errors}!query@{query}}
+\subsubsection{\texorpdfstring{errors}{errors}}
+{\footnotesize\ttfamily list errors = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacequery_a0f59db5220a1b7eca136f6e360055d03}\label{namespacequery_a0f59db5220a1b7eca136f6e360055d03}} 
+\index{query@{query}!labels@{labels}}
+\index{labels@{labels}!query@{query}}
+\subsubsection{\texorpdfstring{labels}{labels}}
+{\footnotesize\ttfamily list labels = \mbox{[}\textquotesingle{}m1\textquotesingle{},\textquotesingle{}m2\textquotesingle{},\textquotesingle{}mt\textquotesingle{},\textquotesingle{}p\textquotesingle{},\textquotesingle{}teff\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacequery_aafb51e0017c73f87bbe2699321c6a5fd}\label{namespacequery_aafb51e0017c73f87bbe2699321c6a5fd}} 
+\index{query@{query}!m\+\_\+arrl@{m\+\_\+arrl}}
+\index{m\+\_\+arrl@{m\+\_\+arrl}!query@{query}}
+\subsubsection{\texorpdfstring{m\+\_\+arrl}{m\_arrl}}
+{\footnotesize\ttfamily m\+\_\+arrl = np.\+arange(4.\+0,7.\+1,0.\+1)}
+
+\mbox{\Hypertarget{namespacequery_ac323a9cbb94178daa2549f554bd92baa}\label{namespacequery_ac323a9cbb94178daa2549f554bd92baa}} 
+\index{query@{query}!m\+\_\+arrs@{m\+\_\+arrs}}
+\index{m\+\_\+arrs@{m\+\_\+arrs}!query@{query}}
+\subsubsection{\texorpdfstring{m\+\_\+arrs}{m\_arrs}}
+{\footnotesize\ttfamily m\+\_\+arrs = np.\+arange(0.\+95,4.\+05,0.\+05)}
+
+\mbox{\Hypertarget{namespacequery_aa2c4078b994af1c9ad5f0821590d0eea}\label{namespacequery_aa2c4078b994af1c9ad5f0821590d0eea}} 
+\index{query@{query}!p\+\_\+arrl@{p\+\_\+arrl}}
+\index{p\+\_\+arrl@{p\+\_\+arrl}!query@{query}}
+\subsubsection{\texorpdfstring{p\+\_\+arrl}{p\_arrl}}
+{\footnotesize\ttfamily p\+\_\+arrl = np.\+arange(1.\+65,4.\+05,0.\+05)}
+
+\mbox{\Hypertarget{namespacequery_acb09178e64b20ef1abc8365eba1ca4fc}\label{namespacequery_acb09178e64b20ef1abc8365eba1ca4fc}} 
+\index{query@{query}!p\+\_\+arrs@{p\+\_\+arrs}}
+\index{p\+\_\+arrs@{p\+\_\+arrs}!query@{query}}
+\subsubsection{\texorpdfstring{p\+\_\+arrs}{p\_arrs}}
+{\footnotesize\ttfamily p\+\_\+arrs = np.\+arange(-\/0.\+60,1.\+66,0.\+02)}
+
+\mbox{\Hypertarget{namespacequery_aadb205048dceb51ed98dc76b0cbc9d00}\label{namespacequery_aadb205048dceb51ed98dc76b0cbc9d00}} 
+\index{query@{query}!progens@{progens}}
+\index{progens@{progens}!query@{query}}
+\subsubsection{\texorpdfstring{progens}{progens}}
+{\footnotesize\ttfamily def progens = \hyperlink{namespacequery_aa6657f1df72e61cb1a20d05df95d7dec}{get\+\_\+progens}(\hyperlink{namespacequery_a7077167865224233566753fc78aadb36}{query})}
+
+\mbox{\Hypertarget{namespacequery_ad85ee362e4d3c01fe2dfe01e693174c5}\label{namespacequery_ad85ee362e4d3c01fe2dfe01e693174c5}} 
+\index{query@{query}!qname@{qname}}
+\index{qname@{qname}!query@{query}}
+\subsubsection{\texorpdfstring{qname}{qname}}
+{\footnotesize\ttfamily qname = sys.\+argv\mbox{[}1\mbox{]}}
+
+\mbox{\Hypertarget{namespacequery_a46f3ad2dbb08867f79cc0b7699518b21}\label{namespacequery_a46f3ad2dbb08867f79cc0b7699518b21}} 
+\index{query@{query}!qpath@{qpath}}
+\index{qpath@{qpath}!query@{query}}
+\subsubsection{\texorpdfstring{qpath}{qpath}}
+{\footnotesize\ttfamily string qpath = \char`\"{}\char`\"{}+\hyperlink{namespacequery_ad85ee362e4d3c01fe2dfe01e693174c5}{qname}}
+
+\mbox{\Hypertarget{namespacequery_a7077167865224233566753fc78aadb36}\label{namespacequery_a7077167865224233566753fc78aadb36}} 
+\index{query@{query}!query@{query}}
+\index{query@{query}!query@{query}}
+\subsubsection{\texorpdfstring{query}{query}}
+{\footnotesize\ttfamily def query = \hyperlink{namespacequery_a5c2d384360f955a8d047fe01db312f88}{get\+\_\+query}(\hyperlink{namespacequery_a46f3ad2dbb08867f79cc0b7699518b21}{qpath})}
+
+\mbox{\Hypertarget{namespacequery_a9391898f449326a0aae5c74a2f8f2da4}\label{namespacequery_a9391898f449326a0aae5c74a2f8f2da4}} 
+\index{query@{query}!rpath@{rpath}}
+\index{rpath@{rpath}!query@{query}}
+\subsubsection{\texorpdfstring{rpath}{rpath}}
+{\footnotesize\ttfamily string rpath = \char`\"{}progens\+\_\+\char`\"{}+qname}
+
+\mbox{\Hypertarget{namespacequery_a2530c3908f0179486a4c2255f792e27a}\label{namespacequery_a2530c3908f0179486a4c2255f792e27a}} 
+\index{query@{query}!start\+\_\+time@{start\+\_\+time}}
+\index{start\+\_\+time@{start\+\_\+time}!query@{query}}
+\subsubsection{\texorpdfstring{start\+\_\+time}{start\_time}}
+{\footnotesize\ttfamily start\+\_\+time = time.\+time()}
+
